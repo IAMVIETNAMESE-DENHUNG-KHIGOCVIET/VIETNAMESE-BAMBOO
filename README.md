@@ -15,24 +15,26 @@ Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 
 <p align="center">
   <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 300 200">
-    <!-- Nền đỏ lượn sóng -->
-    <rect width="300" height="200" fill="#ff0000">
-      <animate attributeName="x" from="0" to="10" dur="2s" repeatCount="indefinite" values="0;5;0;-5;0"/>
-    </rect>
-    
-    <!-- Ngôi sao vàng 5 cánh -->
-    <polygon fill="#ff0" points="150,40 163,90 210,90 172,120 185,170 150,140 115,170 128,120 90,90 137,90">
-      <animateTransform attributeName="transform"
-        attributeType="XML"
-        type="skewY"
-        from="-2" to="2"
-        dur="2s"
-        repeatCount="indefinite"
-        additive="sum"
-        values="-2;2;-2"/>
+    <!-- Nền đỏ (hình chữ nhật lượn sóng bằng path) -->
+    <path id="wave" fill="#ff0000" d="M0,0 Q75,20 150,0 T300,0 V200 H0 Z">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="
+          M0,0 Q75,20 150,0 T300,0 V200 H0 Z;
+          M0,0 Q75,-20 150,0 T300,0 V200 H0 Z;
+          M0,0 Q75,20 150,0 T300,0 V200 H0 Z"/>
+    </path>
+
+    <!-- Ngôi sao vàng 5 cánh đặt giữa -->
+    <polygon fill="#ff0" points="150,60 165,110 210,110 172,135 185,180 150,150 115,180 128,135 90,110 135,110">
+      <animateTransform attributeName="transform" attributeType="XML"
+        type="rotate"
+        values="-2 150 120;2 150 120;-2 150 120"
+        dur="3s"
+        repeatCount="indefinite"/>
     </polygon>
   </svg>
 </p>
+
 
 
 </div>
