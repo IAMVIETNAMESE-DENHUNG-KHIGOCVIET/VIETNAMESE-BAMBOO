@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80 Năm Quốc Khánh Việt Nam - Quốc Kỳ Tung Bay Trên Quảng Trường Ba Đình</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        overflow-x: hidden;
+        background: linear-gradient(135deg, #87CEEB 0%, #98D8E8 50%, #B0E0E6 100%);
+        min-height: 100vh;
+    }
+
+    .main-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Ba Đình Square Background */
+    .square-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(ellipse at center bottom, rgba(139, 69, 19, 0.3) 0%, transparent 70%),
+            linear-gradient(to bottom, 
+                #87CEEB 0%,
+                #98D8E8 30%,
+                #D2B48C 60%,
+                #8B4513 100%
+            );
+        z-index: 1;
+    }
+
+    /* Historic buildings silhouette */
+    .buildings {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(to top, #2F4F4F 0%, rgba(47, 79, 79, 0.8) 50%, transparent 100%);
+        z-index: 2;
+    }
+
+    .buildings::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 15%;
+        height: 80%;
+        background: #1C1C1C;
+        clip-path: polygon(0 100%, 20% 80%, 25% 60%, 35% 40%, 45% 30%, 55% 25%, 65% 30%, 75% 40%, 80% 60%, 100% 100%);
+    }
+
+    .buildings::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+        width: 20%;
+        height: 60%;
+        background: #2F2F2F;
+        clip-path: polygon(0 100%, 10% 90%, 30% 70%, 40% 50%, 60% 40%, 70% 50%, 90% 70%, 100% 100%);
+    }
+
+    /* Flag container with wave animation */
+    .flag-container {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(300px, 50vw, 600px);
+        height: calc(clamp(300px, 50vw, 600px) * 2/3);
+        z-index: 10;
+        perspective: 1000px;
+    }
+
+    /* Wave animation for flag */
+    .vietnam-flag {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
+        border-radius: 8px;
+        overflow: hidden;
+        animation: flagWave 4s ease-in-out infinite;
+        transform-style: preserve-3d;
+    }
+
+    @keyframes flagWave {
+        0% { 
+            clip-path: polygon(
+                0% 0%, 
+                10% 2%, 20% 0%, 30% 3%, 40% 0%, 50% 2%, 60% 0%, 70% 3%, 80% 0%, 90% 2%, 100% 0%,
+                100% 100%, 
+                90% 98%, 80% 100%, 70% 97%, 60% 100%, 50% 98%, 40% 100%, 30% 97%, 20% 100%, 10% 98%, 0% 100%
+            );
+        }
+        50% { 
+            clip-path: polygon(
+                0% 3%, 
+                10% 0%, 20% 2%, 30% 0%, 40% 3%, 50% 0%, 60% 2%, 70% 0%, 80% 3%, 90% 0%, 100% 2%,
+                100% 97%, 
+                90% 100%, 80% 98%, 70% 100%, 60% 97%, 50% 100%, 40% 98%, 30% 100%, 20% 97%, 10% 100%, 0% 98%
+            );
+        }
+        100% { 
+            clip-path: polygon(
+                0% 0%, 
+                10% 2%, 20% 0%, 30% 3%, 40% 0%, 50% 2%, 60% 0%, 70% 3%, 80% 0%, 90% 2%, 100% 0%,
+                100% 100%, 
+                90% 98%, 80% 100%, 70% 97%, 60% 100%, 50% 98%, 40% 100%, 30% 97%, 20% 100%, 10% 98%, 0% 100%
+            );
+        }
+    }
+
+    /* Vietnam Flag SVG */
+    .vietnam-flag {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
+        border-radius: 8px;
+        overflow: hidden;
+        animation: flagWave 4s ease-in-out infinite;
+        transform-style: preserve-3d;
+    }
+
+    .flag-background {
+        fill: #DA251D;
+    }
+
+    .flag-star {
+        fill: #FFDD00;
+        stroke: #E6C200;
+        stroke-width: 1;
+        filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+        animation: starGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes starGlow {
+        from { filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2)) drop-shadow(0 0 8px rgba(255, 221, 0, 0.3)); }
+        to { filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2)) drop-shadow(0 0 16px rgba(255, 221, 0, 0.6)); }
+    }
+
+    /* Title containers */
+    .top-title-container {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 15;
+        text-align: center;
+    }
+
+    .middle-title-container {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 15;
+        text-align: center;
+    }
+
+    .top-title {
+        font-size: clamp(0.8rem, 2vw, 1.5rem);
+        font-weight: bold;
+        color: #FFDD00;
+        text-shadow: 
+            2px 2px 0px #DA251D,
+            3px 3px 0px #B91C1C,
+            4px 4px 8px rgba(0,0,0,0.3);
+        animation: subtitleFloat 5s ease-in-out infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .middle-title {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-weight: bold;
+        color: #DA251D;
+        text-shadow: 
+            3px 3px 0px #FFDD00,
+            4px 4px 0px #E6C200,
+            5px 5px 0px #CC9900,
+            6px 6px 12px rgba(0,0,0,0.4);
+        margin-bottom: 0.5rem;
+        animation: titlePulse 4s ease-in-out infinite;
+    }
+
+    @keyframes titlePulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+
+    @keyframes subtitleFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+    }
+
+    /* Footer text */
+    .footer-text {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 15;
+        text-align: center;
+    }
+
+    .commemorate-text {
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+        color: #FFDD00;
+        text-shadow: 
+            2px 2px 0px #DA251D,
+            3px 3px 0px #B91C1C,
+            4px 4px 8px rgba(0,0,0,0.5);
+        font-weight: 600;
+        background: rgba(218, 37, 29, 0.2);
+        padding: 12px 20px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 221, 0, 0.3);
+        line-height: 1.4;
+    }
+
+    .square-name {
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFDD00;
+        text-shadow: 
+            3px 3px 0px #DA251D,
+            4px 4px 0px #B91C1C,
+            5px 5px 0px #8B0000,
+            6px 6px 12px rgba(0,0,0,0.6);
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    .pride-text {
+        font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFDD00;
+        text-shadow: 
+            2px 2px 0px #DA251D,
+            3px 3px 0px #B91C1C,
+            4px 4px 8px rgba(0,0,0,0.4);
+        display: block;
+        margin-top: 2px;
+    }
+
+    /* Floating particles */
+    .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: radial-gradient(circle, #FFDD00, #FFA500);
+        border-radius: 50%;
+        animation: float 8s ease-in-out infinite;
+    }
+
+    .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .particle:nth-child(2) { left: 20%; animation-delay: 1s; }
+    .particle:nth-child(3) { left: 30%; animation-delay: 2s; }
+    .particle:nth-child(4) { left: 70%; animation-delay: 3s; }
+    .particle:nth-child(5) { left: 80%; animation-delay: 4s; }
+    .particle:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+    @keyframes float {
+        0% { 
+            transform: translateY(100vh) scale(0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+            transform: translateY(90vh) scale(1);
+        }
+        90% {
+            opacity: 1;
+            transform: translateY(10vh) scale(1);
+        }
+        100% {
+            transform: translateY(-10vh) scale(0);
+            opacity: 0;
+        }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .flag-container {
+            width: 80vw;
+            height: calc(80vw * 2/3);
+            top: 30%;
+        }
+
+        .middle-title-container {
+            top: 68%;
+        }
+
+        .buildings::before,
+        .buildings::after {
+            display: none;
+        }
+
+        .middle-title {
+            font-size: 1.8rem;
+        }
+
+        .top-title {
+            font-size: 1.0rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .flag-container {
+            width: 90vw;
+            height: calc(90vw * 2/3);
+            top: 20%;
+        }
+
+        .middle-title {
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .top-title {
+            font-size: 1rem;
+        }
+
+        .commemorate-text {
+            font-size: 0.9rem;
+            padding: 6px 12px;
+        }
+
+        .square-name {
+            font-size: 0.8rem;
+        }
+
+        .pride-text {
+            font-size: 0.6rem;
+        }
+    }
+
+    /* High DPI support */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .vietnam-flag {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="main-container">
+        <!-- Background -->
+        <div class="square-background"></div>
+        <div class="buildings"></div>
+
+    <!-- Floating particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Top Title -->
+    <div class="top-title-container">
+        <div class="top-title">NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+    </div>
+
+    <!-- Vietnam Flag -->
+    <div class="flag-container">
+        <svg class="vietnam-flag" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" 
+             preserveAspectRatio="xMidYMid meet" role="img" aria-label="Quốc kỳ Việt Nam">
+            <title>Quốc kỳ Việt Nam - 80 năm Quốc khánh</title>
+            <desc>Lá cờ đỏ với ngôi sao vàng 5 cánh chính giữa, tung bay trên Quảng trường Ba Đình</desc>
+            
+            <!-- Flag background -->
+            <rect width="300" height="200" class="flag-background"/>
+            
+            <!-- Star -->
+            <polygon class="flag-star" id="star" shape-rendering="geometricPrecision"/>
+        </svg>
+    </div>
+
+    <!-- Middle Title -->
+    <div class="middle-title-container">
+        <div class="middle-title">KỶ NIỆM 80 NĂM QUỐC KHÁNH</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-text">
+        <div class="commemorate-text">
+            2/9/1945 - 2/9/2025<br>
+            <span class="square-name">Quảng trường Ba Đình</span>
+            <span class="pride-text">Tự hào - Tôi là người Việt Nam</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Precise star calculation for Vietnam flag
+    function calculateStarPoints(cx, cy, outerRadius) {
+        const points = [];
+        const step = Math.PI / 5; // 36 degrees
+        const startAngle = -Math.PI / 2; // Start at top
+        
+        // Calculate inner radius for perfect 5-pointed star
+        const innerRadius = outerRadius * Math.sin(Math.PI / 10) / Math.cos(Math.PI / 5);
+        
+        for (let i = 0; i < 10; i++) {
+            const radius = (i % 2 === 0) ? outerRadius : innerRadius;
+            const angle = startAngle + i * step;
+            const x = cx + radius * Math.cos(angle);
+            const y = cy + radius * Math.sin(angle);
+            points.push(`${x.toFixed(2)},${y.toFixed(2)}`);
+        }
+        
+        return points.join(' ');
+    }
+
+    // Initialize flag
+    function initializeFlag() {
+        const star = document.getElementById('star');
+        const cx = 150; // Center x
+        const cy = 100; // Center y
+        const outerRadius = 60; // 1/5 of flag width (300/5 = 60)
+        
+        const starPoints = calculateStarPoints(cx, cy, outerRadius);
+        star.setAttribute('points', starPoints);
+    }
+
+    // Responsive flag adjustment
+    function adjustFlag() {
+        const flagContainer = document.querySelector('.flag-container');
+        const containerWidth = flagContainer.offsetWidth;
+        const aspectRatio = 2/3;
+        
+        // Ensure proper aspect ratio
+        flagContainer.style.height = `${containerWidth * aspectRatio}px`;
+        
+        // Re-calculate star if needed for different viewports
+        initializeFlag();
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeFlag();
+        adjustFlag();
+    });
+
+    // Handle resize
+    window.addEventListener('resize', adjustFlag);
+
+    // Add interactive elements
+    document.querySelector('.flag-container').addEventListener('mouseenter', function() {
+        this.querySelector('.vietnam-flag').style.animationDuration = '2s';
+    });
+
+    document.querySelector('.flag-container').addEventListener('mouseleave', function() {
+        this.querySelector('.vietnam-flag').style.animationDuration = '4s';
+    });
+
+    // Performance optimization
+    if (window.devicePixelRatio > 1) {
+        document.querySelector('.vietnam-flag').style.imageRendering = 'crisp-edges';
+    }
+</script>
+
+
+</body>
+</html>
