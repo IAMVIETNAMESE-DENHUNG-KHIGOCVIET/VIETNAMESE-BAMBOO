@@ -13,7 +13,27 @@ Modern, bilingual (EN + VI), no LinkedIn, no short links
 ### IAMVIETNAMESE-DENHUNG-KHIGOCVIET  
 Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 
-![Profile Banner](https://capsule-render.vercel.app/api?type=venom&height=160&color=0:0f2027,100:2c5364&text=VIETNAMESE%20BAMBOO&fontColor=ffffff&fontSize=36&desc=AI%20%7C%20CV%20%7C%20LLM%20%7C%20RL&descAlign=50&descSize=13)
+<p align="center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 300 200">
+    <!-- Nền đỏ lượn sóng -->
+    <rect width="300" height="200" fill="#ff0000">
+      <animate attributeName="x" from="0" to="10" dur="2s" repeatCount="indefinite" values="0;5;0;-5;0"/>
+    </rect>
+    
+    <!-- Ngôi sao vàng 5 cánh -->
+    <polygon fill="#ff0" points="150,40 163,90 210,90 172,120 185,170 150,140 115,170 128,120 90,90 137,90">
+      <animateTransform attributeName="transform"
+        attributeType="XML"
+        type="skewY"
+        from="-2" to="2"
+        dur="2s"
+        repeatCount="indefinite"
+        additive="sum"
+        values="-2;2;-2"/>
+    </polygon>
+  </svg>
+</p>
+
 
 </div>
 
