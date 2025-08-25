@@ -69,13 +69,7 @@ Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 ## 🧰 Tech Stack | Công nghệ
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/LLMs-2c5364?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=for-the-badge" />
+CÁC TRANG HTMT
 </p>
 
 ---
@@ -93,10 +87,7 @@ Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 This README powers the look & feel of **VIETNAMESE-BAMBOO** and also works great as a profile page. It uses open‑source widgets:
 README này định hình giao diện cho **VIETNAMESE-BAMBOO** và cũng có thể làm trang hồ sơ cá nhân. Nó sử dụng các widget mã nguồn mở:
 
-* **github-readme-stats** by @anuraghazra
-* **streak-stats** by @DenverCoder1
-* **github-profile-trophy** by @ryo-ma
-* **shields.io** for badges
+
 
 > Tip: Dark neon palette (`theme=radical`) matches the screenshots.
 > Gợi ý: Tông màu neon tối (`theme=radical`) phù hợp phong cách hiện đại.
