@@ -14,8 +14,9 @@ Modern, bilingual (EN + VI), no LinkedIn, no short links
 Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 
 <p align="center">
-  <img src="flag_wave.gif" alt="Cờ Việt Nam tung bay" width="600"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Cờ Việt Nam" width="600"/>
 </p>
+
 
 </p>
 
