@@ -28,25 +28,37 @@ Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 
 ---
 
-## 🔥 Featured Projects | Dự án tiêu biểu
+## 🔥 Featured Projects | Dự án nổi bật
 
-> Click a card to explore the repository or visit the website.
-> Nhấn vào thẻ để xem GitHub repo hoặc vào trang web.
+<p align="center">Click a card to explore the project · Nhấn vào thẻ để xem chi tiết</p>
 
-<p align="center">
-  <a href="https://www.nmhpt-khigocviet.vn/projects/vietnamese-bamboo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=VIETNAMESE-BAMBOO&theme=radical&border_color=2c5364"/>
-  </a>
-  <a href="https://www.nmhpt-khigocviet.vn/projects/ascii-generator">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=ASCII-generator&theme=radical&border_color=2c5364"/>
-  </a>
-  <a href="https://www.nmhpt-khigocviet.vn/projects/super-mario-bros-ppo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=Super-mario-bros-PPO-pytorch&theme=radical&border_color=2c5364"/>
-  </a>
-  <a href="https://www.nmhpt-khigocviet.vn/projects/tetris-dqn">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=Tetris-deep-Q-learning-pytorch&theme=radical&border_color=2c5364"/>
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://www.nmhpt-khigocviet.vn/projects/vietnamese-bamboo">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=VIETNAMESE-BAMBOO&theme=radical&border_color=2c5364"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.nmhpt-khigocviet.vn/projects/ascii-generator">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=ASCII-generator&theme=radical&border_color=2c5364"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.nmhpt-khigocviet.vn/projects/super-mario-bros-ppo">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=Super-mario-bros-PPO-pytorch&theme=radical&border_color=2c5364"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.nmhpt-khigocviet.vn/projects/tetris-dqn">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=IAMVIETNAMESE-DENHUNG-KHIGOCVIET&repo=Tetris-deep-Q-learning-pytorch&theme=radical&border_color=2c5364"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
