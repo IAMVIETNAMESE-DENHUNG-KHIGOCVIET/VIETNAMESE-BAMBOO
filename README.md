@@ -21,7 +21,8 @@ Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
   <a href="https://www.linkedin.com/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/IAMVIETNAMESE-DENHUNG-KHIGOCVIET" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://www.youtube.com/" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
-  <a href="#" target="_blank"><img src="https://img.shields.io/badge/Website-2c5364?style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
+  <!-- Gắn tên miền của bạn vào nút Website -->
+  <a href="https://www.nmhpt-khigocviet.vn/" target="_blank"><img src="https://img.shields.io/badge/Website-2c5364?style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
 </p>
 
 > My name is **Viet Nguyen**. I am passionate about **Computer Vision**, **Large Language Models**, and **Reinforcement Learning**. I love building clean, reproducible open‑source projects and educational repos.
@@ -131,4 +132,8 @@ This README powers the look & feel of the repository **VIETNAMESE-BAMBOO** and a
 ## 🔏 Xác thực nội dung | Content Verification
 
 Mã SHA256 của phiên bản hiện tại:
-c948cd89c51267763812ebcd526a35ea11788c9d30804b1e55e37a160f2870b0
+`c948cd89c51267763812ebcd526a35ea11788c9d30804b1e55e37a160f2870b0`
+
+> Liên kết tên miền đã được gắn: [https://www.nmhpt-khigocviet.vn/](https://www.nmhpt-khigocviet.vn/)
+
+*Giữ nguyên các cấu trúc khác theo yêu cầu.*
