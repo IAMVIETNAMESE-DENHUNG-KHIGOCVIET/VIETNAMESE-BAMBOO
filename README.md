@@ -25,7 +25,7 @@ Kỹ sư AI cao cấp · Thị giác máy tính · Mô hình ngôn ngữ lớn �
   <a href="https://nmhpt-khigocviet.vn/" target="_blank"><img src="https://img.shields.io/badge/Website-2c5364?style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
 </p>
 
-> My name is **Viet Nguyen**. I am passionate about **Computer Vision**, **Large Language Models**, and **Reinforcement Learning**.
+> My name is **NHM_VIET_NAM**. I am passionate about **Computer Vision**, **Large Language Models**, and **Reinforcement Learning**.
 > Tôi là **Nguyễn Việt**, đam mê **Thị giác máy tính**, **Mô hình ngôn ngữ lớn** và **Học tăng cường**.
 
 ---
