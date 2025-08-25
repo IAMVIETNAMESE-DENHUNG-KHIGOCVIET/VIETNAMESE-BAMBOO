@@ -76,9 +76,7 @@ CÁC TRANG HTMT
 
 ## 📹 Latest Videos | Video mới nhất
 
-* [Demo: ASCII Generator](https://www.nmhpt-khigocviet.vn/videos/ascii-demo)
-* [Reinforcement Learning plays Flappy Bird](https://www.nmhpt-khigocviet.vn/videos/flappy-bird-rl)
-* [A3C for Super Mario Bros](https://www.nmhpt-khigocviet.vn/videos/mario-a3c)
+CÁC LIÊN KẾT ỨNG DỤNG
 
 ---
 
