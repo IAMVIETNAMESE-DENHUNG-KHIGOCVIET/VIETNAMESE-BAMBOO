@@ -14,19 +14,9 @@ Modern, bilingual (EN + VI), no LinkedIn, no short links
 Senior AI Engineer · Computer Vision · LLM · Reinforcement Learning
 
 <p align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 300 200">
-    <!-- Nền đỏ (hình chữ nhật lượn sóng bằng path) -->
-    <path id="wave" fill="#ff0000" d="M0,0 Q75,10 150,0 T300,0 V200 H0 Z">
-      <animate attributeName="d" dur="4s" repeatCount="indefinite"
-        values="
-          M0,0 Q75,10 150,0 T300,0 V200 H0 Z;
-          M0,0 Q75,-10 150,0 T300,0 V200 H0 Z;
-          M0,0 Q75,10 150,0 T300,0 V200 H0 Z"/>
-    </path>
+  <img src="flag_wave.gif" alt="Cờ Việt Nam tung bay" width="600"/>
+</p>
 
-    <!-- Ngôi sao vàng 5 cánh đứng yên ở trung tâm -->
-    <polygon fill="#ff0" points="150,60 165,110 210,110 172,135 185,180 150,150 115,180 128,135 90,110 135,110"/>
-  </svg>
 </p>
 
 
